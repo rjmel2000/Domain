@@ -16,7 +16,7 @@
           Start-Process "msiexec.exe" -ArgumentList "/i `"$PuttyInstaller`" /qn /norestart" -Wait
           Start-Process "$ChromeInstaller" -ArgumentList "/silent /install" -Wait
           #Download SSMS
-          Invoke-WebRequest -Uri "https://aka.ms/ssmsfullsetup" -OutFile "C:\Tools\SSMS-Setup.exe"
+          #Invoke-WebRequest -Uri "https://aka.ms/ssmsfullsetup" -OutFile "C:\Tools\SSMS-Setup.exe"
           #Start-Process -FilePath "C:\Tools\SSMS-Setup.exe" -ArgumentList "/install", "/quiet", "/norestart" -Wait
 
           # Download Key
